@@ -1,0 +1,17 @@
+# Generated and local files
+.DS_Store
+Thumbs.db
+.vs/
+.vscode/
+.idea/
+*.tmp
+*.log
+.env
+.env.*
+!.env.example
+# Unity project directories are intentionally not part of this showcase
+Library/
+Temp/
+Obj/
+Build/
+Builds/
