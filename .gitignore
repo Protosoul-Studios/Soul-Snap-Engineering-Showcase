@@ -1,4 +1,4 @@
-# Generated and local files
+# Local editor, configuration, and generated files
 .DS_Store
 Thumbs.db
 .vs/
@@ -8,10 +8,14 @@ Thumbs.db
 *.log
 .env
 .env.*
-!.env.example
-# Unity project directories are intentionally not part of this showcase
+
+# Standalone .NET build and test output
+[Bb]in/
+[Oo]bj/
+TestResults/
+
+# Full Unity project content does not belong in this portfolio
 Library/
 Temp/
-Obj/
 Build/
 Builds/

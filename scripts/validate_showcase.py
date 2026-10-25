@@ -8,7 +8,7 @@ from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parent.parent
 issues: list[str] = []
-blocked_roots = {"Assets", "Packages", "ProjectSettings", "Library", "Temp", "Obj", "Builds", "Build", "ThirdParty", "source-samples", "templates"}
+blocked_roots = {"Assets", "Packages", "ProjectSettings", "Library", "Temp", "Obj", "Builds", "Build", "ThirdParty", "source-samples", "templates", "bin", "obj", "Bin", "Obj", "TestResults"}
 internal_files = {"AGENTS.md", "PROJECT_STATE.md", "docs/PUBLICATION_CHECKLIST.md"}
 blocked_ext = {".unity", ".prefab", ".asset", ".fbx", ".dll", ".exe", ".apk", ".aab", ".pem", ".key", ".p12", ".pfx", ".keystore"}
 media_ext = {".mp4", ".webm", ".png", ".jpg", ".jpeg", ".webp"}
@@ -22,7 +22,7 @@ for path in ROOT.rglob("*"):
         continue
     rel = path.relative_to(ROOT)
     name = rel.as_posix()
-    if rel.parts[0] in blocked_roots or name in internal_files:
+    if any(part in blocked_roots for part in rel.parts[:-1]) or name in internal_files:
         issues.append(f"private/template path: {name}")
     if path.suffix.lower() in blocked_ext:
         issues.append(f"blocked project/binary/key type: {name}")
