@@ -1,0 +1,5 @@
+# Standalone C# examples are first-party code, not vendored documentation.
+# GitHub Linguist can exclude content under samples/ from language totals.
+samples/independent-models/*.cs linguist-language=C# -linguist-documentation -linguist-vendored -linguist-generated linguist-detectable
+
+# Python remains a genuine auxiliary repository-validation script.
