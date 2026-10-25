@@ -6,7 +6,7 @@
 | --- | --- | --- |
 | **Private Unity source** | Inspected at `33eb46745d1c594acf09d6726d748d14f557667d` | **Source inspected:** documents code responsibilities; no Unity runtime is proven by inspection alone |
 | **Prior project validation** | Owner tested Unity 6000.2.14f1 Editor host + standalone Development Build client over local loopback | **Historical owner-reported pass:** presences, movement, Soul Bow hits, world impacts, expiry, reconnect and shutdown; not rerun for this portfolio |
-| **Independent C# models** | .NET 10 Release, [20 contract checks](../samples/independent-models/Program.cs) | **Automated standalone checks:** [GitHub Actions workflow](../.github/workflows/showcase-checks.yml) compiles/tests the separate examples, *not* production Unity |
+| **Independent C# models** | .NET 10 Release, [20 contract checks](../samples/independent-models/Program.cs) | **20/20 passed** in [GitHub Actions run #40209420007](https://github.com/Protosoul-Studios/Soul-Snap-Engineering-Showcase/actions/runs/40209420007) at `6db07af9b4c4ebbfd2dc5d3b11a1176f01a411b0`; the workflow also passed its local tree/link audit. The run exercises only separate review examples, *not* production Unity |
 | **Production automated Unity tests** | New EditMode/PlayMode test execution | **Not run** in this showcase workflow |
 | **Production internet networking/security** | Account authorization, anti-cheat, lag, load and external connectivity | **Not verified** |
 | **Game footage** | [Planned post-release captures](../media/videos/README.md) | **Not yet recorded/published** |

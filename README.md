@@ -32,7 +32,7 @@ dotnet run --project samples/independent-models/IndependentModels.csproj --confi
 
 [Model guide](samples/independent-models/README.md) · [Test runner](samples/independent-models/Program.cs) · [CI workflow](.github/workflows/showcase-checks.yml) · [Verification matrix](docs/verification-matrix.md)
 
-Passing those checks establishes **only the behavior of the independent examples**. It does not demonstrate Unity physics, multiplayer reliability, or production testing.
+**Verified result:** [GitHub Actions run #40209420007](https://github.com/Protosoul-Studios/Soul-Snap-Engineering-Showcase/actions/runs/40209420007) passed **20/20 independent model checks** and the repository structure/link audit at commit `6db07af9b4c4ebbfd2dc5d3b11a1176f01a411b0`. These results establish **only the behavior of the independent examples**. They do not demonstrate Unity physics, multiplayer reliability, or production testing.
 
 ## Actual development context
 
